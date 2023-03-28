@@ -1,9 +1,11 @@
 services:
   frontend:
+    image: qhung1412/ecsblog-frontend
     build: frontend
     ports:
       - 80:80
     depends_on:
       - backend
   backend:
+    image: qhung1412/ecsblog-backend
     build: backend
